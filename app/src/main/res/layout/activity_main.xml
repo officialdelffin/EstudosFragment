@@ -61,4 +61,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageBackgroundBarraSuperior"
         tools:layout="@layout/fragment_conversas"/>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBackgroundBarraSuperior"
+        app:srcCompat="@drawable/image_foto_perfil" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
