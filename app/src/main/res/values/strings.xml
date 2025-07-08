@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Nome do projeto -->
+    <string name="app_name">Fragment</string>
+
+    <!-- Barra superior -->
+    <string name="barra_superior_botao_conversas"><b>Conversas</b></string>
+    <string name="barra_superior_botao_status">Status</string>
+    <string name="barra_superior_botao_chamadas">Chamadas</string>
+
+    <!-- Fragment conversas -->
+    <string name="fragment_conversas_text_conversas"><b>Conversas</b></string>
+
+
+</resources>
