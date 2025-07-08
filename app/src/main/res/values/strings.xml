@@ -11,5 +11,11 @@
     <!-- Fragment conversas -->
     <string name="fragment_conversas_text_conversas"><b>Conversas</b></string>
 
+    <!-- Fragment status -->
+    <string name="fragment_status_text_status"><b>Status</b></string>
+
+    <!-- Fragment chamadas -->
+    <string name="fragment_chamadas_text_chamadas"><b>Chamadas</b></string>
+
 
 </resources>
