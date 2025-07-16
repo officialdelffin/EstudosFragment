@@ -12,10 +12,22 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_completo_green" />
+
+    <ImageView
+        android:id="@+id/imagemPerfil"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBackgroundBarraSuperior"
+        app:srcCompat="@drawable/image_foto_perfil" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botaoConversas"
@@ -51,7 +63,7 @@
         app:layout_constraintStart_toEndOf="@+id/botaoStatus" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerConversas"
+        android:id="@+id/fragmentContainerMain"
         android:name="com.example.fragment.fragments.ConversasFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -61,16 +73,38 @@
         app:layout_constraintTop_toBottomOf="@+id/imageBackgroundBarraSuperior"
         tools:layout="@layout/fragment_conversas"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="60dp"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.fragment.fragments.PerfilFragment"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/botaoStatus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageBackgroundBarraSuperior"
-        app:srcCompat="@drawable/image_foto_perfil" />
+        app:layout_constraintTop_toBottomOf="@+id/imageBackgroundBarraSuperior"
+        tools:layout="@layout/fragment_perfil" />
+
+    <TextView
+        android:id="@+id/textoOla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemPerfil"
+        app:layout_constraintStart_toEndOf="@+id/imagemPerfil" />
+
+    <TextView
+        android:id="@+id/textoNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textoOla"
+        app:layout_constraintStart_toEndOf="@+id/textoOla"
+        app:layout_constraintTop_toTopOf="@+id/textoOla" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

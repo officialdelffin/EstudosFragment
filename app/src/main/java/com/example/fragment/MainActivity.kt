@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.fragmentContainerConversas, fragmentEscolhido)
+            .replace(R.id.fragmentContainerMain, fragmentEscolhido)
             .commit()
 
     }

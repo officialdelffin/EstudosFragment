@@ -17,5 +17,14 @@
     <!-- Fragment chamadas -->
     <string name="fragment_chamadas_text_chamadas"><b>Chamadas</b></string>
 
+    <!-- Fragment perfil -->
+
+    <!-- Hints -->
+    <string name="fragment_perfil_hint_nome">Digite seu nome:</string>
+    <string name="fragment_perfil_hint_sobrenome">Digite seu sobrenome:</string>
+
+    <!-- Botões -->
+    <string name="fragment_perfil_button_salvar">Salvar</string>"
+
 
 </resources>
