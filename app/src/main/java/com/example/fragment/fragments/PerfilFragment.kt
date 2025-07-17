@@ -54,7 +54,6 @@ class PerfilFragment : Fragment() {
 
         }
 
-
         // Retornando a variavel de inflação :
         return view
 

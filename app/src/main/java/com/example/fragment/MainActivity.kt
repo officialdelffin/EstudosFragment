@@ -44,17 +44,19 @@ class MainActivity : AppCompatActivity() {
         // Recenbendo dados da intent :
         var informacaoUsuario = intent.extras
 
+        // Verificando a versao do android :
         if ( Build.VERSION.SDK_INT >= 33 ) {
 
-            var nome  = informacaoUsuario?.getParcelable("dadosUsuario", DadosUsuario::class.java )
+            // Recebendo selecionando os dados da informacaoUsuario e selecionando a chave
+            var nome  = informacaoUsuario?.getParcelable( "dadosUsuario", DadosUsuario::class.java )
 
             if ( nome != null ) {
 
+                // Fazendo as subistituições de texto :
                 textoOla.text = "Olá, "
                 textoNomeUsuario.text = nome.nome
 
             }
-
 
         }
 
