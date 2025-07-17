@@ -21,17 +21,6 @@ class PerfilFragment : Fragment() {
     private lateinit var editSobrenome : EditText
     private lateinit var botaoSalvar   : AppCompatButton
 
-    // Chamando a função que cria o fragment :
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // Inicializando e vinculando os elementos :
-        editSobrenome = view?.findViewById( R.id.editSobrenome )!!
-        editNome      = view?.findViewById( R.id.editNome )!!
-        botaoSalvar   = view?.findViewById( R.id.botaoSalvar )!!
-
-    }
-
     // Função que infla o layout do fragment :
     override fun onCreateView(
 
@@ -43,6 +32,11 @@ class PerfilFragment : Fragment() {
 
         // Inflando o fragmento e definindo o layout :
         val view = inflater.inflate( R.layout.fragment_perfil, container, false )
+
+        // Inicializando e vinculando os elementos :
+        editSobrenome = view.findViewById( R.id.editSobrenome )
+        editNome      = view.findViewById( R.id.editNome )
+        botaoSalvar   = view.findViewById( R.id.botaoSalvar )
 
         // Ao clicar o botao salvar :
         botaoSalvar.setOnClickListener {
@@ -59,6 +53,7 @@ class PerfilFragment : Fragment() {
             caminhoActivityMain.putExtra( "dadosUsuario", dadosUsuario )
 
         }
+
 
         // Retornando a variavel de inflação :
         return view
